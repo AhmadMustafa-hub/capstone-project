@@ -1,6 +1,5 @@
 <?php
 include("includes/header.php");
-include("includes/classes.php");
 $x = new admin();
 
 if (isset($_GET['id'])) {
