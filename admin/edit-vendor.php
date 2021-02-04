@@ -1,7 +1,7 @@
 <?php
 ob_start();
 include("includes/header.php");
-include("includes/classes.php");
+//include("includes/classes.php");
 $x = new Vendor();
 if (isset($_POST['submit'])) {
     $x->vendor_name = $_POST['vendor-name'];
