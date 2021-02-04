@@ -1,7 +1,7 @@
 <?php
 ob_start();
 include("includes/header.php");
-include("includes/classes.php");
+//include("includes/classes.php");
 $x = new Customer();
 
 if (isset($_GET['id'])) {
