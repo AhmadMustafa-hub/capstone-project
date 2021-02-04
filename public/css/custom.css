@@ -1,0 +1,108 @@
+body {
+  background-color: white;
+}
+
+/* .test{
+            background-color: #e8e9ea !important;
+            style="background-color: silver !important; border:1px solid black !important;" 
+            
+        }*/
+.container2 {
+  width: 960px !important;
+  position: relative !important;
+  margin: 0 auto !important;
+  line-height: 1.4em !important;
+}
+
+/* If in mobile screen with maximum width 479px. The iPhone screen resolution is 320x480 px (except iPhone4, 640x960) */
+@media only screen and (max-width: 479px) {
+  .container2 {
+    width: 90% !important;
+  }
+}
+
+.product-item .product-image img {
+  width: 100%;
+  height: 285px !important;
+  align-self: center;
+  transition: all 0.3s;
+}
+
+.col {
+  background-color: gray !important;
+  color: black;
+}
+
+.col2 {
+  background-color: #222222 !important;
+  color: blanchedalmond;
+}
+
+i {
+  color: darkslategrey !important;
+}
+
+.navt {
+  background-color: #e1e1e1 !important;
+}
+
+/*  .hov:hover {
+            color: white !important;
+           background-color: black !important;  
+        }
+       /* .cust-cart:hover{
+            background-color: black !important;
+            color: white !important;
+        }*/
+.cat {
+  color: gray !important;
+}
+
+.header .navbar {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+
+  border-radius: 24px;
+}
+
+.feature .feature-content {
+  border-radius: 30px;
+  height: 201px !important;
+  box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 9px 0 rgba(0, 0, 0, 0.19);
+}
+
+.brand {
+  border-radius: 51px;
+}
+
+.custom-slick img {
+  border-radius: 41px;
+}
+
+.category .category-item img {
+  border-radius: 13px;
+}
+
+.category .category-name {
+  border-radius: 13px;
+}
+
+.header .custom-header {
+  border-radius: 26px;
+}
+
+.sidebar-widget.category {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 22px;
+}
+
+hr.style-four {
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+.bottom-bar .logo a img {
+  max-height: 115px !important;
+}

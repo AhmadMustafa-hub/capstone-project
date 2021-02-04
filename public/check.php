@@ -1,0 +1,9 @@
+<?php
+ob_start();
+session_start();
+if(isset($_SESSION['cust_id'])){
+    header('location:checkout.php');
+}else{
+    header('location:login.php');
+}
+?>
