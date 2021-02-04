@@ -1,7 +1,7 @@
 <?php
 ob_start();
 include("includes/header.php");
-include("includes/classes.php");
+//include("includes/classes.php");
 $x = new customer();
 if (isset($_POST['submit'])) {
     $x->customer_name = $_POST['customer-name'];
