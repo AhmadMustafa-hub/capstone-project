@@ -89,8 +89,17 @@ if (!isset($_SESSION)) {
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
                             <div class="dropdown-menu navt">
-                                <a href="login.php" class="dropdown-item">Login</a>
-                                <a href="signup.php" class="dropdown-item">Register</a>
+                            <?php 
+                            if(isset($_SESSION['cust_id'])){
+                                echo"<a href='logout.php'class='dropdown-item'>Logout</a>";
+
+                            }else{
+                               echo "<a href='login.php' class='dropdown-item'>Login</a>";
+                               echo "<a href='signup.php' class='dropdown-item'>Register</a>";
+
+                            }
+                            ?>
+                            
                             </div>
                         </div>
                     </div>
