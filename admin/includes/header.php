@@ -1,8 +1,12 @@
 <?php
+ob_start();
 session_start();
+include_once("classes.php");
 if (!$_SESSION['admin_id']) {
   header("location:login.php");
 }
+$x=new Admin();
+$admin=$x->readById($_SESSION['admin_id']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -72,7 +76,7 @@ if (!$_SESSION['admin_id']) {
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
-          <p class="centered"><a href="index.php"><img src="img/admin-pic/<?php echo $_SESSION['admin_image']; ?>" class="img-circle" width="80"></a></p>
+          <p class="centered"><a href="index.php"><img src="img/admin-pic/<?php echo $admin[0]['admin_image']; ?>" class="img-circle" width="80"></a></p>
           <h5 class="centered"><?php echo $_SESSION['name']; ?></h5>
           <li class="mt">
             <a href="index.php">
