@@ -1,6 +1,6 @@
 <?php
 ob_start();
-include("includes/classes.php");
+//include("includes/classes.php");
 include("includes/header.php");
 $x = new Product();
 
