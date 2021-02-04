@@ -1,7 +1,7 @@
 <?php
 ob_start();
 include("includes/header.php");
-include("includes/classes.php");
+//include("includes/classes.php");
 $x = new Product();
 if (isset($_POST['submit'])) {
     $x->pro_name = $_POST['pro-name'];
@@ -66,7 +66,7 @@ $customer = $x->readById($_GET['id']); ?>
 
                                     </div>
                                     <div class="form-group ">
-                                        <label for="cemail" class="control-label col-lg-2">Qty (required)</label>
+                                        <label for="cemail" class="control-label col-lg-2">Quantity (required)</label>
                                         <div class="col-lg-10">
                                             <input class="form-control " id="cemail" type="text" name="qty" value="<?php echo $customer[0]['qty']; ?>" required />
                                         </div>
