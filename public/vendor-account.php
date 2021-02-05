@@ -242,7 +242,7 @@ $vendor = $vendor->readById($_SESSION['vendor_id']);
                             </div>
                             <div class="col-md-6">
                                 <select name="cat" class="form-control">
-                                    <option value="" disabled selected>Select...</option>
+                                    <option value="" disabled selected>Category...</option>
                                     <?php
                                     $cat = new category();
 
