@@ -57,6 +57,8 @@ if (isset($_POST['submit'])) {
                             <?php if (isset($error)) {
                                 echo "<span class='text-danger'>$error</span>";
                             } ?>
+                            <p>Not have an account?<a class="text-info" href="vendor-signup.php"> Sign up</a>
+
                         </div>
                     </form>
                 </div>
