@@ -113,13 +113,19 @@ if (!isset($_SESSION)) {
                     <div class="navbar-nav mr-auto">
                         <a href="index.php" class="nav-item nav-link active">Home</a>
                         <a href="product-list.php" class="nav-item nav-link">Products</a>
-                        <a href="my-account.php" class="nav-item nav-link">My Account</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sell On EStore</a>
                             <div class="dropdown-menu navt">
-                                <a href="vendor-login.php" class="dropdown-item"> Vendor Login</a>
-                                <a href="vendor-signup.php" class="dropdown-item"> Vendor Register</a>
-                                <a href="vendor-account.php" class="dropdown-item"> Vendor Account</a>
+                            <?php 
+                            if(!isset($_SESSION['vendor_id'])){
+                                echo "<a href='vendor-login.php' class='dropdown-item'>Login</a>";
+                                echo "<a href='vendor-signup.php' class='dropdown-item'>Register</a>";
+                                echo "<a href='vendor-account.php' class='dropdown-item'>Register</a>";
+
+                            }else{
+                                echo "<a href='vendor-logout.php' class='dropdown-item'>Logout</a>";
+                            }
+                                ?>
                             </div>
                         </div>
                     </div>
