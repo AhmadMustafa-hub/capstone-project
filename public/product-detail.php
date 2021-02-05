@@ -53,15 +53,29 @@ if (isset($_POST['submit'])) {
                                         <p>$<?php echo $pro[0]['pro_price']; ?></p>
                                     </div>
                                     <div class="quantity">
-                                        <h4>Quantity:</h4>
+                                      <?php 
+                                      if(!isset($_SESSION['vendor_id'])){
+                                          echo"<h4>Quantity:</h4>";
+                                      }
+                                      ?>
+                                        
                                         <div class="qty">
-                                            <button class="btn-minus" onclick="return false"><i class="fa fa-minus"></i></button>
-                                            <input type="text" value="1" name="num-product">
-                                            <button class="btn-plus" onclick="return false"><i class="fa fa-plus"></i></button>
+                                            <?php
+                                            if(!isset($_SESSION['vendor_id'])){
+                                                echo "<button class='btn-minus' onclick='return false'><i class='fa fa-minus'></i></button>";
+                                                echo "<input type='text' value='1' name='num-product'>";
+                                                echo "<button class='btn-plus' onclick='return false'><i class='fa fa-plus'></i></button>";
+                                            }
+
+                                            ?>
                                         </div>
                                     </div>
                                     <div class="action">
-                                        <button type="submit" name="submit" class="btn"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                                        <?php if (!isset($_SESSION['vendor_id'])) {
+                                            echo "<button type='submit' name='submit' class='btn'><i class='fa fa-shopping-cart'></i>Add to Cart</button>";
+                                        }
+
+                                        ?>
                                     </div>
                                 </div>
                             </form>
