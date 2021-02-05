@@ -122,9 +122,8 @@ if (!isset($_SESSION)) {
                                 echo "<a href='vendor-signup.php' class='dropdown-item'>Register</a>";
 
                             }else{
-                                echo "<a href='vendor-logout.php' class='dropdown-item'>Logout</a>";
                                 echo "<a href='vendor-account.php' class='dropdown-item'>Account</a>";
-
+                                echo "<a href='vendor-logout.php' class='dropdown-item'>Logout</a>";
                             }
                                 ?>
                             </div>
