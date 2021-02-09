@@ -151,7 +151,7 @@ if (!isset($_SESSION)) {
                 <div class="col-md-6">
                     <div class="logo">
                         <a href="index.php">
-                            <img src="img/logo.png" alt="Logo">
+                            <img src="img/logo2.jpg" alt="Logo">
                         </a>
                     </div>
                 </div>
